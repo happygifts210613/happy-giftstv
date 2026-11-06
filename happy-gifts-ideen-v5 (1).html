@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#faf7f2">
+<title>Happy gifts — Finde das perfekte Geschenk</title>
+<style>
+:root{--bg:#faf7f2;--paper:#fffefa;--ink:#292923;--muted:#77776f;--green:#425b49;--pink:#f2d9d4;--sage:#e3eadc;--line:#e9e4da;--peach:#f6e5d8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select{font:inherit}button{cursor:pointer}.announcement{background:var(--green);color:white;text-align:center;padding:9px;font-size:11px;letter-spacing:.12em}.nav{height:76px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}.logo{font: bold 29px Georgia,serif;letter-spacing:-1.5px;color:var(--green);text-decoration:none}.logo span{color:#c98779}.links{display:flex;gap:28px}.links a{font-size:13px;color:var(--ink);text-decoration:none}.right{display:flex;gap:12px;align-items:center}.plain{border:0;background:none;color:var(--ink);font-size:12px;padding:9px}.hero{padding:72px 7vw 78px;display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:center;max-width:1500px;margin:auto}.eyebrow{font-size:10px;font-weight:700;letter-spacing:.18em;color:#89897d;text-transform:uppercase}.hero h1{font:500 clamp(49px,6.5vw,82px)/.99 Georgia,serif;letter-spacing:-.055em;margin:19px 0}.hero h1 em{color:#bd8171;font-weight:400}.hero p{font-size:15px;line-height:1.8;color:var(--muted);max-width:450px}.btn{display:inline-flex;gap:18px;align-items:center;background:var(--green);color:white;border:0;padding:15px 22px;margin-top:18px;text-decoration:none;font-size:11px;letter-spacing:.08em;transition:.25s}.btn:hover{transform:translateY(-3px);background:#536e5a}.heroart{height:435px;border-radius:48% 48% 5px 5px;background:var(--pink);position:relative;display:grid;place-items:center;overflow:hidden}.heroart:before,.heroart:after{content:"";position:absolute;border-radius:50%;background:#e7c0b6}.heroart:before{width:250px;height:250px;right:-80px;top:-70px}.heroart:after{width:190px;height:190px;left:-65px;bottom:-65px;background:#dce5d3}.present{width:205px;height:180px;background:#fff8ed;box-shadow:0 25px 35px #5c46301c;position:relative;z-index:1;display:grid;place-items:center;transform:rotate(-7deg)}.present:before{content:"";position:absolute;left:91px;top:0;height:100%;width:24px;background:#b87d70}.present:after{content:"";position:absolute;left:65px;top:-44px;width:75px;height:50px;border:14px solid #b87d70;border-radius:50% 50% 0 50%;transform:rotate(-20deg)}.present span{font:26px Georgia,serif;color:var(--green);z-index:2}.sticker{position:absolute;background:#fffefa;padding:12px 16px;box-shadow:0 10px 30px #00000010;font:16px Georgia,serif;z-index:2}.s1{top:65px;left:22px;transform:rotate(-6deg)}.s2{bottom:65px;right:18px;transform:rotate(5deg)}.section{max-width:1450px;margin:auto;padding:62px 6vw}.heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:28px}.heading h2{font:500 clamp(34px,4vw,48px) Georgia,serif;letter-spacing:-.04em;margin:10px 0}.heading p{font-size:13px;color:var(--muted)}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.category{border:0;text-align:left;padding:0;background:var(--paper);transition:.25s;overflow:hidden}.category:hover{transform:translateY(-5px);box-shadow:0 16px 35px #0000000d}.catart{height:165px;display:grid;place-items:center;font-size:58px}.catart.a{background:#f2ded9}.catart.b{background:#e4eadf}.catart.c{background:#f3e8d1}.catart.d{background:#e5e1ed}.catname{padding:14px 15px;font:20px Georgia,serif}.catname small{display:block;font:11px system-ui;color:var(--muted);margin-top:4px}.finder{background:var(--sage);margin:25px 6vw 70px;padding:52px 6vw;display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:center}.finder h2{font:500 43px/1.05 Georgia,serif;margin:12px 0}.finder p{font-size:13px;color:#626c5e;line-height:1.7}.quiz{background:#fffefa;padding:25px}.quiz label{font-size:11px;display:block;margin:0 0 8px;color:#65675e}.quiz select,.search{width:100%;padding:13px;border:1px solid var(--line);background:white;margin-bottom:15px;color:var(--ink)}.quiz .btn{width:100%;justify-content:center;margin:0}.results{display:none;background:#fffefa;padding:18px;margin-top:15px;font-size:13px;line-height:1.7}.results.show{display:block}.ideas{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.idea{background:var(--paper);padding:12px;transition:.25s}.idea:hover{transform:translateY(-4px);box-shadow:0 15px 35px #0000000b}.ideaart{height:190px;display:grid;place-items:center;font-size:65px}.ideaart.i1{background:#f1e2d8}.ideaart.i2{background:#e4eadf}.ideaart.i3{background:#ece5f0}.ideaart.i4{background:#f4e9ce}.ideaart.i5{background:#e1e9e9}.ideaart.i6{background:#f2dfdc}.ideameta{padding:13px 4px 5px}.ideameta h3{font:20px Georgia,serif;margin:0 0 6px}.ideameta p{font-size:11px;color:var(--muted);margin:0 0 9px}.chips{display:flex;gap:6px;flex-wrap:wrap}.chip{font-size:9px;background:#f0eee8;padding:5px 8px;color:#666}.searchrow{display:flex;gap:10px;max-width:430px}.searchrow .search{margin:0}.searchrow button{border:0;background:var(--green);color:white;padding:0 16px}.empty{display:none;color:var(--muted);font-size:13px;padding:25px 0}.newsletter{text-align:center;padding:45px 20px 70px}.newsletter h2{font:40px Georgia,serif;margin:12px}.newsletter p{font-size:13px;color:var(--muted)}.newsletter form{display:flex;max-width:420px;margin:22px auto}.newsletter input{flex:1;min-width:0;padding:13px;border:1px solid var(--line);background:white}.newsletter button{border:0;background:var(--green);color:white;padding:0 17px;font-size:11px}footer{background:#293d30;color:#eef0e9;padding:30px 6vw;display:flex;justify-content:space-between;font-size:11px}footer a{color:#eef0e9;text-decoration:none;margin-left:15px}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,15px);opacity:0;background:var(--green);color:white;padding:12px 18px;font-size:12px;transition:.25s;z-index:20}.toast.show{opacity:1;transform:translate(-50%,0)}.reveal{opacity:0;transform:translateY(20px);transition:.65s}.reveal.visible{opacity:1;transform:none}
+@media(max-width:760px){.nav{height:65px;padding:0 5vw}.links{display:none}.logo{font-size:25px}.hero{grid-template-columns:1fr;padding:48px 6vw;gap:30px}.heroart{height:320px}.hero h1{font-size:57px}.section{padding:45px 5vw}.heading{display:block}.categories{grid-template-columns:repeat(2,1fr);gap:10px}.catart{height:125px;font-size:48px}.catname{font-size:17px;padding:12px}.finder{margin:10px 5vw 45px;padding:32px 6vw;grid-template-columns:1fr;gap:20px}.finder h2{font-size:38px}.ideas{grid-template-columns:repeat(2,1fr);gap:10px}.ideaart{height:135px;font-size:48px}.ideameta h3{font-size:17px}footer{display:block;line-height:2.5}footer div+div{margin-top:10px}}
+
+.idea-photo{height:205px;position:relative;overflow:hidden;background:#eee}
+.idea-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.idea:hover .idea-photo img{transform:scale(1.06)}
+.idea-photo .photo-label{position:absolute;left:10px;top:10px;background:#fffefaed;padding:6px 9px;font-size:9px;letter-spacing:.08em;text-transform:uppercase}
+.idea-meta{padding:14px 4px 5px}
+.idea-meta h3{font:20px Georgia,serif;margin:0 0 6px}
+.idea-meta p{font-size:11px;color:var(--muted);margin:0 0 9px;line-height:1.55}
+.idea-price{font-size:11px;color:var(--green);font-weight:700}
+@media(max-width:760px){.idea-photo{height:155px}}
+
+
+.idea{cursor:pointer}
+.idea:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+.detail-overlay{position:fixed;inset:0;background:#20251fcc;z-index:50;display:none;align-items:center;justify-content:center;padding:22px}
+.detail-overlay.open{display:flex}
+.detail-panel{background:var(--paper);width:min(860px,100%);max-height:92vh;overflow:auto;display:grid;grid-template-columns:1fr 1fr;position:relative;box-shadow:0 24px 80px #0003}
+.detail-image{width:100%;height:100%;min-height:430px;object-fit:cover;background:var(--pink)}
+.detail-copy{padding:42px 35px}
+.detail-copy .eyebrow{margin-bottom:13px}
+.detail-copy h2{font:500 38px/1.05 Georgia,serif;letter-spacing:-.04em;margin:0 0 15px}
+.detail-copy p{font-size:13px;line-height:1.8;color:var(--muted)}
+.detail-copy h3{font:20px Georgia,serif;margin:23px 0 8px}
+.detail-copy ul{padding-left:18px;color:var(--muted);font-size:12px;line-height:1.9}
+.detail-price{display:inline-block;margin-top:8px;color:var(--green);font-size:12px;font-weight:700}
+.detail-close{position:absolute;right:12px;top:12px;border:0;background:#fffefa;color:var(--ink);width:38px;height:38px;border-radius:50%;font-size:22px;z-index:2}
+.detail-action{border:0;background:var(--green);color:white;padding:13px 18px;font-size:10px;letter-spacing:.08em;margin-top:18px}
+@media(max-width:650px){.detail-panel{grid-template-columns:1fr}.detail-image{height:230px;min-height:0}.detail-copy{padding:28px 23px}.detail-copy h2{font-size:32px}.detail-overlay{padding:10px}}
+
+
+.wishlist-tools{display:flex;align-items:center;gap:10px}
+.heart-btn{position:absolute;right:10px;top:10px;width:38px;height:38px;border:0;border-radius:50%;background:#fffefaed;color:#9b6c67;font-size:21px;display:grid;place-items:center;z-index:3;box-shadow:0 4px 15px #00000012}
+.idea-photo{position:relative}
+.heart-btn.saved{background:#f4deda;color:#b84f58}
+.wishlist-count{font-size:11px;color:var(--green);font-weight:700}
+.wishlist-section{background:#f3eee6;padding:48px 6vw;margin:10px 0 55px}
+.wishlist-inner{max-width:1250px;margin:auto}
+.wishlist-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.wishlist-item{background:var(--paper);padding:15px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px}
+.wishlist-item strong{font:18px Georgia,serif;font-weight:400}
+.wishlist-item small{display:block;color:var(--muted);margin-top:4px}
+.wishlist-remove{border:0;background:none;color:#9b6c67;font-size:18px;padding:6px}
+.wishlist-empty{font-size:13px;color:var(--muted);padding:8px 0}
+@media(max-width:760px){.wishlist-list{grid-template-columns:1fr}.wishlist-section{padding:35px 5vw}}
+
+</style></head>
+<body>
+<div class="announcement" data-t="announcement">GESCHENKIDEEN FÜR JEDEN MENSCHEN · JEDEN ANLASS · JEDES BUDGET</div>
+<header class="nav"><a class="logo" href="#">Happy <span>gifts.</span></a><nav class="links"><a href="#categories" data-t="navcat">Kategorien</a><a href="#finder" data-t="navfinder">Geschenkefinder</a><a href="#ideas" data-t="navideas">Ideen entdecken</a><a href="#wishlist">♡ Merkliste <span class="wishlist-count" id="wishlistCount">0</span></a></nav><div class="right"><button class="plain" id="language">DE / EN</button></div></header>
+<main>
+<section class="hero"><div class="reveal visible"><div class="eyebrow" data-t="eyebrow">DIE SUCHE HAT EIN ENDE</div><h1 data-t="headline">Das perfekte<br>Geschenk? <em>Findest</em><br>du hier.</h1><p data-t="intro">Ob für deinen Lieblingsmenschen oder einen ganz besonderen Anlass – entdecke Geschenkideen, die Freude machen und von Herzen kommen.</p><a class="btn" href="#finder"><span data-t="cta">GESCHENK FINDEN</span> ↗</a></div><div class="heroart reveal"><div class="sticker s1" data-t="sticker1">a little surprise</div><div class="present"><span>for you</span></div><div class="sticker s2" data-t="sticker2">made to make you smile ✳</div></div></section>
+<section class="section" id="categories"><div class="heading"><div><div class="eyebrow" data-t="eyecat">WAS SUCHST DU?</div><h2 data-t="cathead">Finde deine Kategorie</h2></div><p data-t="catsub">Ein guter Gedanke ist der Anfang eines tollen Geschenks.</p></div><div class="categories">
+<button class="category" data-filter="Geburtstag"><div class="catart a">🎂</div><div class="catname" data-t="c1">Geburtstag<small>Für den Ehrentag</small></div></button>
+<button class="category" data-filter="Liebe"><div class="catart b">💗</div><div class="catname" data-t="c2">Liebe & Beziehung<small>Für Herzensmenschen</small></div></button>
+<button class="category" data-filter="Familie"><div class="catart c">🏡</div><div class="catname" data-t="c3">Familie & Freunde<small>Einfach mal Danke sagen</small></div></button>
+<button class="category" data-filter="Weihnachten"><div class="catart d">🎄</div><div class="catname" data-t="c4">Weihnachten<small>Festliche Inspiration</small></div></button>
+</div></section>
+<section class="finder" id="finder"><div><div class="eyebrow" data-t="eyefinder">IN WENIGEN KLICKS</div><h2 data-t="findhead">Wer bekommt<br>diesmal Freude?</h2><p data-t="findtext">Beantworte drei kleine Fragen und wir zeigen dir Ideen, die zu deiner Suche passen.</p></div><div class="quiz"><label for="who" data-t="who">Für wen suchst du?</label><select id="who"><option value="Alle">Bitte auswählen</option><option>Partner/in</option><option>Freund/in</option><option>Mama</option><option>Papa</option><option>Kind</option><option>Kolleg/in</option></select><label for="age">Wie alt ist die Person ungefähr?</label><select id="age"><option value="Alle">Alter egal</option><option value="0-12">0–12 Jahre</option><option value="13-17">13–17 Jahre</option><option value="18-30">18–30 Jahre</option><option value="31-60">31–60 Jahre</option><option value="60+">60+ Jahre</option></select><label for="occasion" data-t="occasion">Zu welchem Anlass?</label><select id="occasion"><option value="Alle">Bitte auswählen</option><option>Geburtstag</option><option>Liebe</option><option>Familie</option><option>Weihnachten</option><option>Einfach so</option></select><label for="budget" data-t="budget">Dein Budget?</label><select id="budget"><option value="Alle">Egal</option><option value="20">Bis CHF 20</option><option value="50">CHF 20–50</option><option value="100">CHF 50–100</option></select><button class="btn" id="findbtn" data-t="findbtn">MEINE GESCHENKIDEEN ANZEIGEN ↗</button><div class="results" id="results" aria-live="polite"></div></div></section>
+<section class="section" id="ideas"><div class="heading"><div><div class="eyebrow" data-t="eyeideas">INSPIRATION FÜR DICH</div><h2 data-t="ideashead">Beliebte Geschenkideen</h2></div><p data-t="ideassub">Kleine und grosse Freuden – für jeden Anlass.</p></div><div class="searchrow"><input class="search" id="search" placeholder="Idee suchen, z. B. Kerze, Buch, Erlebnis …"><button id="searchbtn">⌕</button></div><div style="height:18px"></div><div class="ideas" id="ideaGrid">
+<article class="idea" tabindex="0" role="button" aria-label="Geschenkidee öffnen" "Geburtstag Liebe Familie Alle" data-price="25"><div class="idea-photo"><button class="heart-btn" type="button" aria-label="Zur Merkliste hinzufügen" aria-pressed="false">♡</button><img loading="lazy" src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=700&q=80" alt="Duftkerze in einem gemütlichen Zuhause"><span class="photo-label">Selfcare</span></div><div class="idea-meta"><h3>Duftkerze & Wohlfühlset</h3><span hidden class="gift-data" data-for="Partner/in Freund/in Mama Kolleg/in" data-age="18-30 31-60 60+"></span><p>Ein entspannender Duft für kleine Auszeiten und gemütliche Abende.</p><span class="idea-price">Ideenbudget: ab CHF 25</span></div></article>
+<article class="idea" tabindex="0" role="button" aria-label="Geschenkidee öffnen" "Geburtstag Liebe Familie Alle" data-price="35"><div class="idea-photo"><button class="heart-btn" type="button" aria-label="Zur Merkliste hinzufügen" aria-pressed="false">♡</button><img loading="lazy" src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=700&q=80" alt="Schön gestaltete Bücher als Geschenk"><span class="photo-label">Persönlich</span></div><div class="idea-meta"><h3>Persönliches Erinnerungsbuch</h3><span hidden class="gift-data" data-for="Partner/in Freund/in Mama Papa" data-age="13-17 18-30 31-60 60+"></span><p>Mit Fotos, kleinen Notizen und gemeinsamen Lieblingsmomenten.</p><span class="idea-price">Ideenbudget: ab CHF 35</span></div></article>
+<article class="idea" tabindex="0" role="button" aria-label="Geschenkidee öffnen" "Geburtstag Liebe Alle" data-price="45"><div class="idea-photo"><button class="heart-btn" type="button" aria-label="Zur Merkliste hinzufügen" aria-pressed="false">♡</button><img loading="lazy" src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=700&q=80" alt="Frischer Blumenstrauss"><span class="photo-label">Blumengruss</span></div><div class="idea-meta"><h3>Blumenstrauss oder Blumen-Abo</h3><span hidden class="gift-data" data-for="Partner/in Freund/in Mama Kolleg/in" data-age="18-30 31-60 60+"></span><p>Ein farbenfroher Überraschungsmoment – einfach so oder zum Feiern.</p><span class="idea-price">Ideenbudget: ab CHF 45</span></div></article>
+<article class="idea" tabindex="0" role="button" aria-label="Geschenkidee öffnen" "Familie Geburtstag Weihnachten Alle" data-price="18"><div class="idea-photo"><button class="heart-btn" type="button" aria-label="Zur Merkliste hinzufügen" aria-pressed="false">♡</button><img loading="lazy" src="https://images.unsplash.com/photo-1511381939415-e440154bcc34?auto=format&fit=crop&w=700&q=80" alt="Schokolade und süsse Geschenkideen"><span class="photo-label">Zum Teilen</span></div><div class="idea-meta"><h3>Schokoladen-Verkostung</h3><span hidden class="gift-data" data-for="Partner/in Freund/in Mama Papa Kind Kolleg/in" data-age="13-17 18-30 31-60 60+"></span><p>Eine Auswahl besonderer Sorten zum gemeinsamen Probieren.</p><span class="idea-price">Ideenbudget: ab CHF 18</span></div></article>
+<article class="idea" tabindex="0" role="button" aria-label="Geschenkidee öffnen" "Liebe Geburtstag Alle" data-price="60"><div class="idea-photo"><button class="heart-btn" type="button" aria-label="Zur Merkliste hinzufügen" aria-pressed="false">♡</button><img loading="lazy" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=700&q=80" alt="Stimmungsvoll gedeckter Tisch für ein Erlebnis"><span class="photo-label">Erlebnis</span></div><div class="idea-meta"><h3>Gemeinsames Erlebnis</h3><span hidden class="gift-data" data-for="Partner/in Freund/in Mama Papa Kolleg/in" data-age="13-17 18-30 31-60 60+"></span><p>Brunch, Kino, Konzert, Escape Room oder ein kreativer Workshop.</p><span class="idea-price">Ideenbudget: ab CHF 60</span></div></article>
+<article class="idea" tabindex="0" role="button" aria-label="Geschenkidee öffnen" "Weihnachten Familie Geburtstag Alle" data-price="20"><div class="idea-photo"><button class="heart-btn" type="button" aria-label="Zur Merkliste hinzufügen" aria-pressed="false">♡</button><img loading="lazy" src="https://images.unsplash.com/photo-1606509036992-4d0e9c9a8b3e?auto=format&fit=crop&w=700&q=80" alt="Puzzle als Geschenkidee"><span class="photo-label">Gemeinsam</span></div><div class="idea-meta"><h3>Spiel oder Puzzle</h3><span hidden class="gift-data" data-for="Freund/in Mama Papa Kind Kolleg/in" data-age="0-12 13-17 18-30 31-60 60+"></span><p>Für gemütliche Stunden, gemeinsame Rätsel und viel Spass.</p><span class="idea-price">Ideenbudget: ab CHF 20</span></div></article>
+<article class="idea" tabindex="0" role="button" aria-label="Geschenkidee öffnen" "Geburtstag Liebe Familie Alle" data-price="30"><div class="idea-photo"><button class="heart-btn" type="button" aria-label="Zur Merkliste hinzufügen" aria-pressed="false">♡</button><img loading="lazy" src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=700&q=80" alt="Liebevoll verpacktes Geschenk"><span class="photo-label">Klassiker</span></div><div class="idea-meta"><h3>Überraschungs-Geschenkbox</h3><span hidden class="gift-data" data-for="Partner/in Freund/in Mama Papa Kind Kolleg/in" data-age="13-17 18-30 31-60 60+"></span><p>Eine kleine Auswahl aus Lieblingssnacks, Pflegeprodukten und Schönem.</p><span class="idea-price">Ideenbudget: ab CHF 30</span></div></article>
+<article class="idea" tabindex="0" role="button" aria-label="Geschenkidee öffnen" "Familie Geburtstag Weihnachten Alle" data-price="22"><div class="idea-photo"><button class="heart-btn" type="button" aria-label="Zur Merkliste hinzufügen" aria-pressed="false">♡</button><img loading="lazy" src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=700&q=80" alt="Schöne Wohnaccessoires und Dekoration"><span class="photo-label">Für Zuhause</span></div><div class="idea-meta"><h3>Schöne Wohnaccessoires</h3><span hidden class="gift-data" data-for="Mama Papa Freund/in Kolleg/in" data-age="18-30 31-60 60+"></span><p>Eine Vase, ein kleines Dekoobjekt oder ein besonderer Bilderrahmen.</p><span class="idea-price">Ideenbudget: ab CHF 22</span></div></article>
+<article class="idea" tabindex="0" role="button" aria-label="Geschenkidee öffnen" "Liebe Geburtstag Familie Alle" data-price="28"><div class="idea-photo"><button class="heart-btn" type="button" aria-label="Zur Merkliste hinzufügen" aria-pressed="false">♡</button><img loading="lazy" src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=700&q=80" alt="Schlichter Schmuck als Geschenk"><span class="photo-label">Kleine Freude</span></div><div class="idea-meta"><h3>Schmuck & kleine Accessoires</h3><span hidden class="gift-data" data-for="Partner/in Freund/in Mama" data-age="13-17 18-30 31-60 60+"></span><p>Ein dezentes Armband, eine Kette oder ein hübsches Accessoire.</p><span class="idea-price">Ideenbudget: ab CHF 28</span></div></article>
+<article class="idea" tabindex="0" role="button" aria-label="Geschenkidee öffnen" "Geburtstag Familie Weihnachten Alle" data-price="15"><div class="idea-photo"><button class="heart-btn" type="button" aria-label="Zur Merkliste hinzufügen" aria-pressed="false">♡</button><img loading="lazy" src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=700&q=80" alt="Notizbuch und Schreibwaren"></div><div class="idea-meta"><h3>Schönes Notizbuch</h3><span hidden class="gift-data" data-for="Freund/in Mama Papa Kind Kolleg/in" data-age="13-17 18-30 31-60 60+"></span><p>Für Gedanken, Pläne, Skizzen und neue Ideen.</p><span class="idea-price">Ideenbudget: ab CHF 15</span></div></article>
+<article class="idea" tabindex="0" role="button" aria-label="Geschenkidee öffnen" "Liebe Geburtstag Alle" data-price="40"><div class="idea-photo"><button class="heart-btn" type="button" aria-label="Zur Merkliste hinzufügen" aria-pressed="false">♡</button><img loading="lazy" src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=700&q=80" alt="Freunde verbringen gemeinsam Zeit"><span class="photo-label">Zeit schenken</span></div><div class="idea-meta"><h3>Ein Tag voller Überraschungen</h3><span hidden class="gift-data" data-for="Partner/in Freund/in Mama Papa" data-age="13-17 18-30 31-60 60+"></span><p>Plane einen kleinen Ausflug mit Lieblingsorten und Lieblingsmenschen.</p><span class="idea-price">Ideenbudget: ab CHF 40</span></div></article>
+<article class="idea" tabindex="0" role="button" aria-label="Geschenkidee öffnen" "Familie Weihnachten Geburtstag Alle" data-price="24"><div class="idea-photo"><button class="heart-btn" type="button" aria-label="Zur Merkliste hinzufügen" aria-pressed="false">♡</button><img loading="lazy" src="https://images.unsplash.com/photo-1549465220-1ea8c56a?auto=format&fit=crop&w=700&q=80" alt="Geschenk mit Schleife"><span class="photo-label">Mit Liebe</span></div><div class="idea-meta"><h3>Personalisierte Kleinigkeiten</h3><span hidden class="gift-data" data-for="Partner/in Freund/in Mama Papa Kind Kolleg/in" data-age="0-12 13-17 18-30 31-60 60+"></span><p>Schlüsselanhänger, Tasse oder kleines Erinnerungsstück mit Namen.</p><span class="idea-price">Ideenbudget: ab CHF 24</span></div></article>
+</div><div class="empty" id="empty">Keine passenden Ideen gefunden. Versuche einen anderen Suchbegriff.</div></section>
+
+<section class="wishlist-section" id="wishlist">
+  <div class="wishlist-inner">
+    <div class="heading"><div><div class="eyebrow">DEINE LIEBLINGSIDEEN</div><h2>Deine Merkliste ♡</h2></div><p>Speichere Ideen, die dir gefallen.</p></div>
+    <div class="wishlist-list" id="wishlistList"><p class="wishlist-empty">Noch keine Geschenkideen gespeichert. Klicke auf das Herz einer Idee, um sie hier zu sammeln.</p></div>
+  </div>
+</section>
+<section class="newsletter"><div class="eyebrow" data-t="newsletterey">EIN KLEINER FUNKE INSPIRATION</div><h2 data-t="newsletterhead">Schenk Freude. Immer wieder.</h2><p data-t="newslettertext">Lass dich von neuen Geschenkideen und Inspirationen überraschen.</p><form id="news"><input type="email" required placeholder="Deine E-Mail-Adresse"><button data-t="subscribe">ANMELDEN ↗</button></form></section>
+</main><footer><div>© 2026 Happy gifts. <span data-t="footer">Mit Freude zusammengestellt.</span></div><div><a href="#categories" data-t="navcat">Kategorien</a><a href="#finder" data-t="navfinder">Geschenkefinder</a><a href="mailto:hallo@happygifts.example">Kontakt</a></div></footer>
+<div class="detail-overlay" id="detailOverlay" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+  <div class="detail-panel">
+    <button class="detail-close" id="detailClose" aria-label="Schliessen">×</button>
+    <img class="detail-image" id="detailImage" src="" alt="">
+    <div class="detail-copy">
+      <div class="eyebrow">GESCHENK-INSPIRATION</div>
+      <h2 id="detailTitle"></h2>
+      <p id="detailDescription"></p>
+      <span class="detail-price" id="detailPrice"></span>
+      <h3>So wird es besonders</h3>
+      <p id="detailTip"></p>
+      <h3>Eine schöne Idee dazu</h3>
+      <ul id="detailExtras"></ul>
+      <button class="detail-action" id="detailCloseAction">ZURÜCK ZU ALLEN IDEEN ↗</button>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast">Danke! Das ist eine Demo-Funktion.</div>
+<script>
+const $=s=>document.querySelector(s);let lang="de",activeCategory="Alle";
+const copy={en:{announcement:"GIFT IDEAS FOR EVERY PERSON · EVERY OCCASION · EVERY BUDGET",navcat:"Categories",navfinder:"Gift finder",navideas:"Explore ideas",eyebrow:"THE SEARCH IS OVER",headline:'The perfect<br>gift? <em>Find it</em><br>right here.',intro:"For your favourite person or a very special occasion — discover thoughtful gift ideas that bring joy.",cta:"FIND A GIFT",sticker1:"a little surprise",sticker2:"made to make you smile ✳",eyecat:"WHAT ARE YOU LOOKING FOR?",cathead:"Explore categories",catsub:"A thoughtful idea is the start of a lovely gift.",eyefinder:"IN JUST A FEW CLICKS",findhead:"Who are you<br>celebrating?",findtext:"Answer three quick questions and we'll show you ideas for your search.",who:"Who is it for?",occasion:"What's the occasion?",budget:"Your budget?",findbtn:"SHOW MY GIFT IDEAS ↗",eyeideas:"A LITTLE INSPIRATION",ideashead:"Popular gift ideas",ideassub:"Little and big joys for every occasion.",newsletterey:"A LITTLE SPARK OF INSPIRATION",newsletterhead:"Give joy. Again and again.",newslettertext:"Get inspired by fresh gift ideas.",subscribe:"SIGN UP ↗",footer:"Thoughtfully curated."},de:{}};
+function toast(msg){let t=$("#toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2000)}
+function filterIdeas(){let q=$("#search").value.toLowerCase(),shown=0;document.querySelectorAll(".idea").forEach(card=>{let ok=(activeCategory==="Alle"||card.dataset.tags.includes(activeCategory))&&card.innerText.toLowerCase().includes(q);card.style.display=ok?"":"none";if(ok)shown++});$("#empty").style.display=shown?"none":"block"}
+document.querySelectorAll(".category").forEach(b=>b.onclick=()=>{activeCategory=b.dataset.filter;$("#results").classList.remove("show");$("#ideas").scrollIntoView({behavior:"smooth"});filterIdeas()});
+$("#searchbtn").onclick=()=>{$("#results").classList.remove("show");filterIdeas()};$("#search").addEventListener("input",()=>{$("#results").classList.remove("show");filterIdeas()});
+$("#findbtn").onclick=()=>{
+  const who=$("#who").value, age=$("#age").value, occasion=$("#occasion").value, budget=$("#budget").value;
+  let count=0;
+  document.querySelectorAll(".idea").forEach(card=>{
+    const tags=card.dataset.tags.split(" "), price=Number(card.dataset.price);
+    const meta=card.querySelector(".gift-data");
+    const people=meta.dataset.for.split(" "), ages=meta.dataset.age.split(" ");
+    const whoMatch=who==="Alle"||people.includes(who);
+    const ageMatch=age==="Alle"||(who==="Kind"&&ages.includes(age))||(who!=="Kind"&&age!=="Alle");
+    const occasionMatch=occasion==="Alle"||tags.includes(occasion)||tags.includes("Alle");
+    const budgetMatch=budget==="Alle"||(budget==="20"&&price<=20)||(budget==="50"&&price>20&&price<=50)||(budget==="100"&&price>50&&price<=100);
+    const ok=whoMatch&&ageMatch&&occasionMatch&&budgetMatch;
+    card.style.display=ok?"":"none";
+    if(ok)count++;
+  });
+  activeCategory="Alle"; $("#search").value="";
+  $("#ideas").scrollIntoView({behavior:"smooth"});
+  $("#empty").style.display=count?"none":"block";
+  $("#results").classList.add("show");
+  $("#results").textContent=count
+    ? `${count} passende ${count===1?"Geschenkidee":"Geschenkideen"} gefunden${who!=="Alle"?" für "+who:""}${age!=="Alle"?" (ungefähr "+age+" Jahre)":""}. Die Vorschläge berücksichtigen Anlass und Budget.`
+    : "Dazu haben wir gerade keine passende Idee. Ändere Alter, Anlass oder Budget und versuche es noch einmal.";
+};
+
+
+const WISHLIST_KEY="happy-gifts-wishlist-v1";
+let savedGifts=[];
+try{savedGifts=JSON.parse(localStorage.getItem(WISHLIST_KEY)||"[]");if(!Array.isArray(savedGifts))savedGifts=[];}catch(e){savedGifts=[];}
+function persistWishlist(){
+  try{localStorage.setItem(WISHLIST_KEY,JSON.stringify(savedGifts));}catch(e){}
+}
+function renderWishlist(){
+  const list=$("#wishlistList");
+  $("#wishlistCount").textContent=savedGifts.length;
+  document.querySelectorAll(".idea").forEach(card=>{
+    const title=card.querySelector("h3").textContent.trim();
+    const button=card.querySelector(".heart-btn");
+    const isSaved=savedGifts.includes(title);
+    button.classList.toggle("saved",isSaved);
+    button.textContent=isSaved?"♥":"♡";
+    button.setAttribute("aria-pressed",String(isSaved));
+    button.setAttribute("aria-label",isSaved?"Aus Merkliste entfernen":"Zur Merkliste hinzufügen");
+  });
+  if(!savedGifts.length){
+    list.innerHTML='<p class="wishlist-empty">Noch keine Geschenkideen gespeichert. Klicke auf das Herz einer Idee, um sie hier zu sammeln.</p>';
+    return;
+  }
+  list.innerHTML="";
+  savedGifts.forEach(title=>{
+    const card=[...document.querySelectorAll(".idea")].find(c=>c.querySelector("h3").textContent.trim()===title);
+    if(!card)return;
+    const item=document.createElement("div");item.className="wishlist-item";
+    const info=document.createElement("div");
+    const name=document.createElement("strong");name.textContent=title;
+    const price=document.createElement("small");price.textContent=card.querySelector(".idea-price").textContent;
+    info.append(name,price);
+    const remove=document.createElement("button");remove.className="wishlist-remove";remove.type="button";remove.textContent="×";remove.setAttribute("aria-label",title+" aus Merkliste entfernen");
+    remove.onclick=()=>toggleWishlist(title);
+    item.append(info,remove);list.append(item);
+  });
+}
+function toggleWishlist(title){
+  savedGifts=savedGifts.includes(title)?savedGifts.filter(x=>x!==title):[...savedGifts,title];
+  persistWishlist();renderWishlist();
+  toast(savedGifts.includes(title)?"Zur Merkliste hinzugefügt ♡":"Aus der Merkliste entfernt");
+}
+document.querySelectorAll(".heart-btn").forEach(button=>{
+  button.addEventListener("click",event=>{
+    event.stopPropagation();
+    const title=button.closest(".idea").querySelector("h3").textContent.trim();
+    toggleWishlist(title);
+  });
+});
+renderWishlist();
+
+const giftDetails = {
+  "Duftkerze & Wohlfühlset": ["Ein entspannender Duft für kleine Auszeiten und gemütliche Abende.", "Wähle einen Duft, der zur Person passt, und ergänze eine weiche Decke oder einen Lieblingstee.", ["Duftkerze aus Sojawachs", "Kleine Handcreme oder Badezusatz", "Persönliche Karte mit einem Wohlfühlmoment"]],
+  "Persönliches Erinnerungsbuch": ["Ein Buch voller Fotos, Nachrichten und gemeinsamer Lieblingsmomente – persönlich und voller Gefühl.", "Lass ein paar Seiten bewusst frei, damit neue Erinnerungen dazukommen können.", ["Fotos und kleine Bildunterschriften", "Ein gemeinsamer Insider oder Lieblingsspruch", "Platz für zukünftige Erlebnisse"]],
+  "Blumenstrauss oder Blumen-Abo": ["Ein frischer Blumengruss bringt Farbe in den Alltag und passt zu vielen Anlässen.", "Besonders schön wird es mit den Lieblingsfarben oder einer Blume mit persönlicher Bedeutung.", ["Saisonale Blumen auswählen", "Eine kleine Vase dazulegen", "Eine Karte mit einem lieben Gruss"]],
+  "Schokoladen-Verkostung": ["Eine feine Auswahl verschiedener Schokoladen lädt zum gemeinsamen Entdecken und Geniessen ein.", "Mach daraus einen kleinen Tasting-Abend und probiert Sorten blind – der Spass ist inklusive.", ["Dunkle, helle und fruchtige Sorten", "Kleine Bewertungszettel", "Tee oder Kaffee als Begleitung"]],
+  "Gemeinsames Erlebnis": ["Gemeinsame Zeit bleibt oft länger in Erinnerung als ein Gegenstand.", "Schenke nicht nur einen Gutschein, sondern schlage gleich zwei mögliche Termine vor.", ["Brunch oder Picknick", "Kreativ-Workshop oder Escape Room", "Kino-, Konzert- oder Museumsausflug"]],
+  "Spiel oder Puzzle": ["Ein Spiel oder Puzzle sorgt für gemütliche Stunden und gemeinsame Erfolgsmomente.", "Achte auf die Lieblingswelten und darauf, ob die Person lieber knobelt, lacht oder zusammen spielt.", ["Kleines Kartenspiel für unterwegs", "Puzzle mit schönem Motiv", "Snacks für den Spieleabend"]],
+  "Überraschungs-Geschenkbox": ["Eine liebevoll zusammengestellte Box vereint mehrere kleine Lieblingsdinge.", "Wähle ein Thema – zum Beispiel Filmabend, Selfcare oder Kaffee-Pause – und stimme alles darauf ab.", ["Lieblingssnack oder Süssigkeit", "Kleine Pflege- oder Lifestyle-Idee", "Seidenpapier und persönliche Notiz"]],
+  "Schöne Wohnaccessoires": ["Ein schönes Wohnstück bringt Persönlichkeit in den Alltag und macht das Zuhause noch gemütlicher.", "Orientiere dich an den Farben und Materialien, die bereits im Zuhause der Person vorkommen.", ["Kleine Vase oder Keramikschale", "Besonderer Bilderrahmen", "Dekoratives Objekt mit Bedeutung"]],
+  "Schmuck & kleine Accessoires": ["Ein dezentes Accessoire kann zu einem täglichen Lieblingsstück werden.", "Wenn du den Stil nicht genau kennst, sind schlichte Formen und neutrale Farben oft eine gute Wahl.", ["Schlichtes Armband oder Kette", "Kleine Schmuckschale", "Geschenkverpackung mit persönlicher Nachricht"]],
+  "Schönes Notizbuch": ["Für Gedanken, Pläne, Skizzen und neue Ideen – ein schönes Notizbuch ist vielseitig.", "Schreibe eine kleine Widmung auf die erste Seite oder lege einen hochwertigen Stift dazu.", ["Notizbuch mit Leineneinband", "Passender Stift", "Kleine Karte mit einem inspirierenden Satz"]],
+  "Ein Tag voller Überraschungen": ["Ein selbst geplanter Tag mit Lieblingsorten und kleinen Überraschungen zeigt echte Aufmerksamkeit.", "Plane einen lockeren Ablauf mit einer Hauptaktivität und kleinen Zwischenstopps – ohne den Tag zu überladen.", ["Frühstück an einem Lieblingsort", "Spaziergang oder kleiner Ausflug", "Abschluss mit Dessert oder Lieblingsessen"]],
+  "Personalisierte Kleinigkeiten": ["Ein Gegenstand mit Namen, Datum oder einer kleinen Botschaft wird zu etwas ganz Eigenem.", "Wähle eine Personalisierung, die eine gemeinsame Erinnerung oder einen Insider aufgreift.", ["Tasse oder Schlüsselanhänger", "Kleines Erinnerungsstück mit Datum", "Kurzer Satz, der nur euch etwas sagt"]]
+};
+function openGiftDetail(card){
+  const title=card.querySelector("h3").textContent.trim();
+  const data=giftDetails[title];
+  if(!data)return;
+  const img=card.querySelector("img");
+  $("#detailImage").src=img.src;
+  $("#detailImage").alt=img.alt;
+  $("#detailTitle").textContent=title;
+  $("#detailDescription").textContent=data[0];
+  $("#detailTip").textContent=data[1];
+  $("#detailPrice").textContent=card.querySelector(".idea-price").textContent;
+  $("#detailExtras").innerHTML=data[2].map(item=>`<li>${item}</li>`).join("");
+  $("#detailOverlay").classList.add("open");
+  document.body.style.overflow="hidden";
+  $("#detailClose").focus();
+}
+function closeGiftDetail(){
+  $("#detailOverlay").classList.remove("open");
+  document.body.style.overflow="";
+}
+document.querySelectorAll(".idea").forEach(card=>{
+  card.addEventListener("click",()=>openGiftDetail(card));
+  card.addEventListener("keydown",event=>{
+    if(event.key==="Enter"||event.key===" "){event.preventDefault();openGiftDetail(card);}
+  });
+});
+$("#detailClose").onclick=closeGiftDetail;
+$("#detailCloseAction").onclick=closeGiftDetail;
+$("#detailOverlay").addEventListener("click",event=>{if(event.target.id==="detailOverlay")closeGiftDetail();});
+document.addEventListener("keydown",event=>{if(event.key==="Escape")closeGiftDetail();});
+
+$("#news").onsubmit=e=>{e.preventDefault();toast(lang==="de"?"Danke! Newsletter-Anmeldung ist hier nur eine Demo.":"Thanks! Newsletter signup is a demo.");e.target.reset()};
+$("#language").onclick=()=>{lang=lang==="de"?"en":"de";document.documentElement.lang=lang;document.querySelectorAll("[data-t]").forEach(el=>{let key=el.dataset.t;if(copy[lang][key])el.innerHTML=copy[lang][key]});$("#language").textContent=lang==="de"?"DE / EN":"EN / DE"};
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");obs.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll(".reveal:not(.visible)").forEach(el=>obs.observe(el));
+</script></body></html>
